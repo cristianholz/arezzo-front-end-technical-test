@@ -27,11 +27,7 @@ Iniciar o ambiente Dev repositório raiz.
 npm run start
 ```
 
-```
-http-server
-```
-
-### 4 - Build Prod Version
+### 4 - Build Produção Version
 
 Gerar build de publicação. Vai ser criada uma pasta dist na raiz do repositório.
 
@@ -41,5 +37,6 @@ npm run build
 
 ### TECNOLOGIA:
 
+* WEBPACK
 * ES6
 * SCSS
