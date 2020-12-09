@@ -1,0 +1,92 @@
+.login {
+  position: absolute;
+  top: 77px;
+  right: -450px;
+  width: 100%;
+  max-width: 430px;
+  background: #fff;
+  padding: 30px;
+  z-index: 10;
+  border: 1px solid $border-color;
+  opacity: 0;
+  @extend .transition4s;
+
+  &--open{
+    right: -1px;
+    opacity: 1;
+  }
+
+  &__line {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+    span {
+      background: #fff;
+      padding: 0px 20px;
+      z-index: 5;
+      &::after {
+        @include pseudo;
+        height: 1px;
+        width: 100%;
+        left: 0px;
+        top: 8px;
+        background: $border-color;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__form {
+    label {
+      display: block;
+      width: 100%;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    input {
+      width: 100%;
+    }
+  }
+
+  &__cadastrar {
+    margin: 20px 0;
+    border-top: 1px solid $border-color;
+    padding-top: 20px;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__esqueci {
+    float: right;
+    font-size: 11px;
+    text-decoration: underline;
+    font-weight: 700;
+    margin-bottom: 20px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__relative {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+  }
+  .btn {
+    font-size: 12px;
+    &--block {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+  &__preview{
+    position: absolute;
+    right: 12px;
+    top: 31px;
+  }
+}

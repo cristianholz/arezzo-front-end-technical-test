@@ -1,0 +1,17 @@
+.novidades {
+  text-align: center;
+  margin: 80px 0 30px;
+  @include mq("tablet-wide", max) {
+    margin: 30px 0;
+  }
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+.filter {
+  .select__conteiner {
+    max-width: 150px;
+    float: right;
+  }
+}
